@@ -18,18 +18,17 @@ def choose_cave():
     return cave
 
 
-def check_cave(chosenCave):
+def check_cave(chosen_cave):
     print('Вы приближаетесь к пещере...')
     time.sleep(2)
     print('Темнота заставляет вас дрожать от страха...')
     time.sleep(2)
     print('Большой дракон выпрыгивает перед вами! Он раскрывает свою пасть и...')
-    #print()
     time.sleep(2)
 
-    friendlyCave = rd.randint(1, 2)
+    friendly_cave = rd.randint(1, 2)
 
-    if chosenCave == str(friendlyCave):
+    if chosen_cave == str(friendly_cave):
         print('...делится сокровищами!')
     else:
         print('...моментально съедает вас!')
