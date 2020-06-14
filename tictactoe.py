@@ -11,8 +11,8 @@ def draw_board(board):
 
 def input_player_letter():
     letter = ''
-    while not letter == 'Х' or letter == 'О':
-        print('Вы выбираете X или O?')
+    while not (letter == 'Х' or letter == 'О'):
+        print('Вы выбираете Х или О?')
         letter = input().upper()
 
     if letter == 'Х':
