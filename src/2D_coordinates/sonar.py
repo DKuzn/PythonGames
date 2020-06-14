@@ -19,13 +19,12 @@ def get_new_board():
 
 
 def draw_board(board):
-    tens_digits_line = ' '
+    tens_digits_line = '    '
     for i in range(1, 6):
         tens_digits_line += (' ' * 9) + str(i)
 
     print(tens_digits_line)
-    print(' ' + ('0123456789' * 6))
-    print()
+    print('   ' + ('0123456789' * 6))
 
     for row in range(15):
         if row < 10:
@@ -38,7 +37,7 @@ def draw_board(board):
             board_row += board[column][row]
 
         print('%s%s %s %s' % (extra_space, row, board_row, row))
-    print(' ' + ('0123456789' * 6))
+    print('   ' + ('0123456789' * 6))
     print(tens_digits_line)
 
 
