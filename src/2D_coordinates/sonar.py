@@ -180,7 +180,7 @@ while True:
         print('отправляться домой, в порт! Игра окончена.')
         print('Вы не нашли сундуки в следующих местах:')
         for x, y in the_chests:
-            print(' %s, %s' % x, y)
+            print(' %s, %s' % (x, y))
 
     print('Хотите сыграть ещё раз? (да или нет)')
     if not input().lower().startswith('д'):
